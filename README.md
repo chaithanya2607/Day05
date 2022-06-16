@@ -1,6 +1,24 @@
 # day05
-sum of all numbers in an array
-----const readline = require("readline");
+QUESTION 1
+Convert all strings to upper case
+----
+const readline = require("readline");
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+   const arr=['Hello','World','Guvigeeks','Chaithanya'];
+   const uppercased=arr.map(name=> name.toUpperCase());
+   console.log(uppercased);
+});
+QUESTION 3
+Sum of all numbers in an array
+----
+const readline = require("readline");
 const inp = readline.createInterface({
   input: process.stdin
 });
