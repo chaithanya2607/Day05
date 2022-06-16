@@ -1,6 +1,5 @@
 # day05
-QUESTION 1
-Convert all strings to upper case
+2] Convert all strings to upper case
 ----
 const readline = require("readline");
 const inp = readline.createInterface({
@@ -15,8 +14,8 @@ inp.on("close", () => {
    const uppercased=arr.map(name=> name.toUpperCase());
    console.log(uppercased);
 });
-QUESTION 3
-Sum of all numbers in an array
+
+3] Sum of all numbers in an array
 ----
 const readline = require("readline");
 const inp = readline.createInterface({
