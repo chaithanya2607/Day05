@@ -1,6 +1,35 @@
 # day05
-2] Convert all strings to upper case
+1.1] Print odd numbers in an array.
+---
+# Normal function method
+const readline = require("readline");
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+inp.on("close", () => {
+var oddnum=function(arr) {
+    let temp= [];
+    for (let ele of arr) {
+        if (ele % 2 !== 0) {
+            temp.push(ele)
+        }
+    }
+    return temp;
+}
+console.log(oddnum([3,90,56,78,99,33,11,67,43]));
+});
+# Anonymous function method
+# Arrow function method
+
+1.2] Convert all strings to upper case.
 ----
+# Normal function method
+# Anonymous function method
+# Arrow function method
 const readline = require("readline");
 const inp = readline.createInterface({
   input: process.stdin
@@ -15,8 +44,12 @@ inp.on("close", () => {
    console.log(uppercased);
 });
 
-3] Sum of all numbers in an array
+
+1.3] Sum of all numbers in an array.
 ----
+# Normal function method
+# Anonymous function method
+# Arrow function method
 const readline = require("readline");
 const inp = readline.createInterface({
   input: process.stdin
@@ -33,9 +66,12 @@ inp.on("close", () => {
     }
     console.log(sumofarr);
 });
-4] Return all the prime numbers in an array
+
+
+1.4] Return all the prime numbers in an array.
 ----
-const readline = require("readline");
+# Normal function method
+# Anonymous function methodconst readline = require("readline");
 const inp = readline.createInterface({
   input: process.stdin
 });
@@ -63,4 +99,20 @@ arr.forEach(function (element) {
 });
 console.log(result);
 });
+# Arrow function method
+
+1.5] Return all plindromes in an array.
+---
+# Normal function method
+# Anonymous function method
+# Arrow function method
+1.6] Return median of 2 sorted arrays of some size.
+---
+# Normal function method
+# Anonymous function method
+# Arrow function method
+1.7] Remove duplicates from an array.
+---
+1.8] Rotate an array by k times.
+---
 
