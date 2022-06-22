@@ -72,6 +72,7 @@ inp.on("close", () => {
 ----
 # Normal function method
 # Anonymous function methodconst readline = require("readline");
+const readline = require("readline");
 const inp = readline.createInterface({
   input: process.stdin
 });
@@ -110,9 +111,12 @@ console.log(result);
 ---
 # Normal function method
 # Anonymous function method
-# Arrow function method
 1.7] Remove duplicates from an array.
 ---
+# Normal function method
+# Anonymous function method
 1.8] Rotate an array by k times.
 ---
+# Normal function method
+# Anonymous function method
 
