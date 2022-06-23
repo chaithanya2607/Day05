@@ -33,7 +33,7 @@ console.log(oddnum([3,90,56,78,99,33,11,67,43]));
       for (let i = 0; i < arr.length; i++) {
            sumofarr += arr[i];
             }
-}
+        }
     console.log(sumofarr([4, 8, 7, 13, 12]));
 
 
