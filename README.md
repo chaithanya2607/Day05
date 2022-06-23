@@ -1,6 +1,6 @@
 # day05
-1] Do the below programs in anonymous function & IIFE
-1.1] Print odd numbers in an array
+# 1] Do the below programs in anonymous function & IIFE
+# 1.1] Print odd numbers in an array
 # anonymous function---
     var oddnum=function(arr) {
     let temp= [];
@@ -17,7 +17,7 @@ console.log(oddnum([3,90,56,78,99,33,11,67,43]));
 
 
 
-1.2]Convert all the strings to title caps in a string array
+# 1.2]Convert all the strings to title caps in a string array
 # anonymous function---
   
 
@@ -26,7 +26,7 @@ console.log(oddnum([3,90,56,78,99,33,11,67,43]));
 # IIFE---
 
 
-1.3] Sum of all numbers in an array
+# 1.3] Sum of all numbers in an array
 # anonymous function---
     var sumofarr=function(arr){
     var sumofarr = 0;
@@ -40,28 +40,28 @@ console.log(oddnum([3,90,56,78,99,33,11,67,43]));
 # IIFE---
 
 
-1.4] Return all the prime numbers in an array
+# 1.4] Return all the prime numbers in an array
 # anonymous function---
  
 
 # IIFE---
 
 
-1.5] Return all the palindromes in an array
+# 1.5] Return all the palindromes in an array
 # anonymous function---
 
 
 # IIFE---
 
 
-1.6] Return median of two sorted arrays of the same size
+# 1.6] Return median of two sorted arrays of the same size
 # anonymous function---
 
 
 # IIFE---
 
 
-1.7] Remove duplicates from an array
+# 1.7] Remove duplicates from an array
 # anonymous function---
 
 let arr=['guvi','geek','fullstack','vacation','geek','fullstack','sriptinglanguage','guvi'];
@@ -71,13 +71,13 @@ console.log(dups);
 # IIFE---
 
 
-1.8] Rotate an array by k times
+# 1.8] Rotate an array by k times
 # anonymous function---
 
 
 # IIFE---
 
-3] Do the below programs in arrow functions
+# 3] Do the below programs in arrow functions
 3.1] Print odd numbers in an array. (arrow function)
 ---
   var numbers = [11,12,33,45,56,67,78,79,90,93,99,98];
