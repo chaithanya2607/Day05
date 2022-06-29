@@ -72,25 +72,66 @@
 
 
 # 1.4] Return all the prime numbers in an array
-# anonymous function---
- 
+-----
+      let arr= [-1,-2,-3,1,2,3,4,5,6,7,8,9,10];
+       let result = [];
+       function isPrime(arr) {
+       if(arr< 2) return false;
 
-# IIFE---
-
+       for (let k = 2; k < arr; k++){
+         if(arr % k == 0){
+           return false;
+         }
+            }
+         return true;
+        }
+          arr.forEach(function (element) {
+          const item = isPrime(element);
+         if (item) {
+         result.push(element);
+           }
+         });
+         console.log(result);
 
 # 1.5] Return all the palindromes in an array
+
 # anonymous function---
 
-
-# IIFE---
+        function isPalindrome(str) {
+      str = str.replace(/\W/g, '').toLowerCase();
+       return (str == str.split('').reverse().join(''));
+          }
+          console.log(isPalindrome("level"));               
+          console.log(isPalindrome("levels"));
+          console.log(isPalindrome("A car, a man, a maraca"));
 
 
 # 1.6] Return median of two sorted arrays of the same size
-# anonymous function---
-
-
-# IIFE---
-
+# anonymous function---function getMedian(ar1, ar2, n)
+    {
+    let j = 0;
+    let i = n - 1;
+    while (ar1[i] > ar2[j] && j < n && i > -1)
+    {
+        let temp = ar1[i];
+        ar1[i] = ar2[j];
+        ar2[j] = temp;
+        i--; j++;
+    }
+    ar1.sort(function(a, b){return a - b});
+    ar2.sort(function(a, b){return a - b});
+    return parseInt((ar1[n - 1] + ar2[0]) / 2, 10);
+    }
+     
+    let ar1 = [ 1, 12, 15, 26, 38 ];
+    let ar2 = [ 2, 13, 17, 30, 45 ];
+ 
+    let n1 = 5;
+    let n2 = 5;
+    if (n1 == n2)
+   console.log(getMedian(ar1, ar2, n1));
+    else
+    console.log("Doesn't work for arrays of unequal size");
 
 # 1.7] Remove duplicates from an array
 # anonymous function---
@@ -113,10 +154,15 @@
 
 
 # 1.8] Rotate an array by k times
-# anonymous function---
-
-
-# IIFE---
+----    
+      function arrayRotate(arr, k) {
+          k -= arr.length * Math.floor(k / arr.length);
+          arr.push.apply(arr, arr.splice(0, k));
+          return arr;
+       }
+      for(let i =0 ; i <= 3 ; i++) {
+      console.log(arrayRotate(["Guvian","a","am","I"], i), i);
+      }
 
 # 3] Do the below programs in arrow functions
 # 3.1] Print odd numbers in an array. (arrow function)
@@ -152,6 +198,8 @@
  
 
 # 3.5] Return all the palindromes in an array (arrow function)
----
+---    
+         const getAllPalindromes = (words) => words.filter((word) => word.split("").reverse().join("") === word);
+         console.log(getAllPalindromes(["damage", "rotator"]));
 
 
