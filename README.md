@@ -1,4 +1,4 @@
-# day05
+# Day05
 # 1] Do the below programs in anonymous function & IIFE
 # 1.1] Print odd numbers in an array
 
@@ -128,10 +128,11 @@
  
     let n1 = 5;
     let n2 = 5;
-    if (n1 == n2)
-   console.log(getMedian(ar1, ar2, n1));
-    else
-    console.log("Doesn't work for arrays of unequal size");
+     if (n1 == n2){
+      console.log(getMedian(ar1, ar2, n1));}
+       else{
+       console.log("Doesn't work for arrays of unequal size");
+       }
 
 # 1.7] Remove duplicates from an array
 # anonymous function---
